@@ -1,0 +1,25 @@
+.image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('/src/assets/images/sagrado-corazon.webp');
+    -webkit-filter: blur(30px) contrast(200%); /* Para navegadores basados en WebKit (Safari, Chrome antiguo) */
+    filter: blur(30px) contrast(200%);
+    z-index: -1;
+    /* top: 15px; */
+    inset: 0;
+    /* object-fit: cover; */
+    -webkit-background-size: cover; /* Para navegadores basados en WebKit (Safari, Chrome antiguo) */
+    -moz-background-size: cover;    /* Para Firefox */
+    -o-background-size: cover;      /* Para Opera */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .enlacess {
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(194, 194, 194, 0.4);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(194,194,194,0.4);
+    box-shadow: 0px 0px 40px 0px rgba(194, 194, 194, 0.4);
+} */
