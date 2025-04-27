@@ -1,5 +1,6 @@
 import ImagenSagradoCorazon from "../../assets/images/sagrado-corazon.webp";
 import Enlaces from "./components/Enlaces";
+import styles from "./styles/Index.module.css";
 
 const Index = () => {
   return (
@@ -12,7 +13,9 @@ const Index = () => {
                 <p className="text-sm text-slate-700 text-center">Doctor Mora, Guanajuato</p> 
             </div>
             <div>
-                <img src={ImagenSagradoCorazon} alt="Sagrado Corazon" className="size-[180px] mt-8 rounded-lg shadow-lg object-cover mx-auto" />
+                <div className={`${styles.image} relative size-[180px] mx-auto`}>
+                <img src={ImagenSagradoCorazon} alt="Sagrado Corazon" className={`relative size-[180px] mt-8 rounded-lg shadow-lg object-cover aspect-square`} />
+                </div>
             </div>
             
         </div>
